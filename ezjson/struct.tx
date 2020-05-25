@@ -1,0 +1,33 @@
+StructModel:
+    simpletypes *= SimpleType 
+    structs += Struct
+    insert += Insert
+;
+
+Struct:
+    'struct' name = ID '{'
+        properties += Property
+    '}'
+;
+
+Property:
+    name = ID ':' type = [Type]
+;
+
+Type:
+    SimpleType | Struct
+;
+
+SimpleType:
+    'type' name = ID
+;
+
+Insert:
+    'insert' name = ID '{' 
+        propinsert+=Propinsert
+    '}'
+;
+
+Propinsert:
+    name = ID
+;

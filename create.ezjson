@@ -1,0 +1,49 @@
+type string 
+type integer
+
+struct BoundingBoxes {
+    name: string
+    annotations: Annotations
+}
+
+struct Annotations {
+    label: string
+    coordinates: Coordinates
+ }
+
+struct Coordinates {
+    x: integer
+    y: integer
+ }
+
+insert Iname {
+    image1
+    image2
+    image3
+    image4
+    image5
+}
+
+insert Ilabel {
+    cat
+    dog
+    cat
+    dog
+    dog
+}
+
+insert Ix {
+    v10
+    v20
+    v40
+    v34
+    v12
+}
+
+insert Iy {
+    v40
+    v75
+    v15
+    v52
+    v14
+}
