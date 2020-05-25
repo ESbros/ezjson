@@ -2,7 +2,7 @@ from textx import metamodel_from_file
 import json
 
 
-struc_meta = metamodel_from_file('ezjson/struct.tx')
+struc_meta = metamodel_from_file('ezjson/ezjson.tx')
 test_model = struc_meta.model_from_file('create.ezjson')
 
 main_dict = test_model.structs[0].name
