@@ -2,7 +2,7 @@ import codecs
 import os
 from setuptools import find_packages, setup
 
-PACKAGE_NAME = "ez-json"
+PACKAGE_NAME = "ezjson"
 VERSION = "0.1.0"
 AUTHOR = "Erik Solis"
 AUTHOR_EMAIL = "edsg77@gmail.com"

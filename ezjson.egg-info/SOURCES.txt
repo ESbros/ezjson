@@ -1,0 +1,8 @@
+setup.py
+ezjson.egg-info/PKG-INFO
+ezjson.egg-info/SOURCES.txt
+ezjson.egg-info/dependency_links.txt
+ezjson.egg-info/entry_points.txt
+ezjson.egg-info/requires.txt
+ezjson.egg-info/top_level.txt
+tx_ezjson/__init__.py

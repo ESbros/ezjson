@@ -29,5 +29,5 @@ Insert:
 ;
 
 Propinsert:
-    name = ID
+    name = ID | name = INT | name = FLOAT
 ;

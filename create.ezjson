@@ -16,7 +16,7 @@ struct Coordinates {
     y: integer
  }
 
-insert Iname {
+insert name {
     image1
     image2
     image3
@@ -24,7 +24,7 @@ insert Iname {
     image5
 }
 
-insert Ilabel {
+insert label {
     cat
     dog
     cat
@@ -32,18 +32,18 @@ insert Ilabel {
     dog
 }
 
-insert Ix {
-    v10
-    v20
-    v40
-    v34
-    v12
+insert x {
+    10
+    20
+    40
+    34
+    12
 }
 
-insert Iy {
-    v40
-    v75
-    v15
-    v52
-    v14
+insert y {
+    40
+    75
+    15
+    52
+    14
 }

@@ -2,7 +2,7 @@ from textx import metamodel_from_file
 import json
 
 
-struc_meta = metamodel_from_file('ezjson/ezjson.tx')
+struc_meta = metamodel_from_file('tx_ezjson/ezjson.tx')
 test_model = struc_meta.model_from_file('create.ezjson')
 
 main_dict = test_model.structs[0].name
@@ -30,10 +30,10 @@ for struct in reversed(test_model.structs):
 dicts_elems = {}
 for insert in test_model.insert:
     temp_list = []
-    key = insert.name.replace("I", "")
+    key = insert.name
     for element in insert.propinsert:
-        temp_list.append(element.name.replace("v", ""))
-    dicts_elems[insert.name.replace("I", "")] = temp_list
+        temp_list.append(element.name)
+    dicts_elems[insert.name] = temp_list
 
 
 def modify_recursive(d, bag, i):
@@ -55,7 +55,7 @@ for item in dicts_elems.keys():
 for i in range (leng):
     d = modify_recursive(dicts, dicts_elems, i)
     print(d[main_dict], '\n')
-    dict_final.append(d[main_dict])
+    dict_final.append(d[main_dict].copy())
 
 print(dict_final)
 
