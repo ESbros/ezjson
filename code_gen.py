@@ -1,5 +1,6 @@
 from textx import metamodel_from_file
 import json
+import copy
 
 
 struc_meta = metamodel_from_file('tx_ezjson/ezjson.tx')
@@ -55,7 +56,7 @@ for item in dicts_elems.keys():
 for i in range (leng):
     d = modify_recursive(dicts, dicts_elems, i)
     print(d[main_dict], '\n')
-    dict_final.append(d[main_dict].copy())
+    dict_final.append(copy.deepcopy(d[main_dict]))
 
 print(dict_final)
 
